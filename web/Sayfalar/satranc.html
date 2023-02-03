@@ -1,0 +1,170 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Eda'nın sitesi</title>
+</head>
+
+<body>
+
+<div  align="center"><img src="../Resimler/banner.jpg" width="804" height="170" /></div>&nbsp;
+<div class="kutu2">&nbsp;
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<p>
+  <style>
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+</style>
+  </head>
+
+<div class="slideshow-container">
+  
+  <div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="../Resimler/Eda.jpg" width="329" height="51%" />
+  <div class="text">Eda kılınç</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="../Resimler/Eda1.jpg" width="338" height="49%" />
+  <div class="text">Eda kılınç</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="../Resimler/Eda2.jpg" width="348" height="48%" />
+  <div class="text">Eda kılınç</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+    <center><h1>En Sevdiğim Kitaplar</h1></center>
+    <div align="center">
+      <p><em><strong>Satranç Özet</strong></em> 
+
+      </p>
+      <p>Satranç, Stefan Zweig'ın bir nevi dünyaya vedası niteliğindedir. Ölmeden önce yazdığı son eser olan Satranç, farklı bir dünyanın kapılarını aralıyor bizlere.
+        
+        Kitap, iki arkadaşın New York'tan Buenos Aires'e giden bir gemiye binmesiyle başlar. Gemide gazeteciler de vardır çünkü dünya satranç şampiyonu Mirko Czentovic de bir turnuva için Buenos Aires'e gitmektedir. Mirko Czentovic, küçük yaşlarda anlama, konuşma gibi birçok konuda zorluk çekmiş bir köylüdür aslında. Küçüklüğünde rahip olan babası ve arkadaşının her akşam oynadığı üç el satranç müsabakalarını düzenli olarak izleyerek satranç öğrenmiştir. Bir akşam babasının işi çıkıp da arkadaşıyla oynadığı satranç yarım kalınca, Mirko babasının yerine oyuna girerek o eli ve devamındaki iki eli daha kazanır. Babası buna çok şaşırır ve devamında şehirdeki satranç kulübüne giderek yeteneğini herkese gösterirler. Böylece büyük bir şöhrete ulaşan Mirko Czentovic, en sonunda da dünya şampiyonu olarak şöhretini zirveye ulaştırır. Fakat satranç oyunu bitip de masadan kalkınca, çevresindekilere küçüklüğündeki aptal bakışlarla bakmakta ve gazetecilere saçma ve anlaşılmaz yanıtlar vermektedir. Bu nedenle gazetecilerle veya çevresindeki insanlarla satranç dışında hiç konuşmamaktadır.
+        
+        Gün geçtikçe gemideki yolcular arasında bir satranç şampiyonu olduğu duyulmaya başlar. Bunu duyan milyoner petrol zengini olan McConnor, Czentovic'e para karşılığı bir el satranç oynamayı teklif eder. Czentovic ise bu teklifi seve seve kabul eder. Fakat Czentovic'e karşı o sırada orada bulunan tüm satranç meraklıları birlikte oynayacaktır. Hamle sırası rakiplerine geldiğinde Czentovic salonun alt başındaki masaya gidip oturuyor, hamle sırası kendisine geldiğinde ise ayakta bir saniye bile duraksamadan hamlesini yapıyordur. Sonunda yalnızca kırk ikinci hamlede rakiplerini mat eder. Fakat yenilgiyi hazmedemeyen McConnor Czentovic'e bir el daha teklif eder. Yeniden yenilgiye doğru giderlerken beklenmedik biri çıkagelir. Yapacakları hamlenin yanlış olduğunu, eğer bu hamleyi yaparlarsa birkaç hamle sonra yenileceklerini söyleyerek doğru hamleyi yapmalarını sağlar. Bu her hamlede böylece devam eder ve sonunda Czentovic ile berabere kalırlar. Buna oldukça şaşırır ve sevinirler. McConnor adının Dr. B. Olduğunu öğrendikleri dostlarına bir el tek başına Czentovic ile oynamasını, parasını kendinin ödeyeceğini söyler. Fakat ne var ki Dr.B. oyun biter bitmez utangaç ve pişman bir hale bürünür. Bunun imkansız olduğunu, 25 yıldır hiç satranç oynamadığını söyleyerek oradan ayrılır. Dr. B. nin Czentovic'i yenmesini isteyen McConnor ve diğerleri aralarından birini Dr.B'yi ikna etmek üzere güverteye gönderirler. Dr.B'de bunu yapamayacağını söyler ve hikayesini anlatmaya başlar:
+        
+        Seneler önce, babasıyla bir avukatlık bürosu işletirken, hükumetten gizli işler yaptığı gerekçesiyle tutuklanır. Fakat hapise atılmak yerine, içinde yalnızca bir koltuk, bir dolap, bir leğen ve küçük parmaklıklı bir pencere olan küçük ve alçak tavanlı bir odada tutulur. Başlarda bir sıkıntı yaşamasa da, zamanla saati ve zamanı bilemeyerek, yemeğini getirip götürmek dışında bir şey yapmayan ve kendisiyle tek kelime dahi konuşmayan bir gardiyanı görerek ve zamanını artık tüm ayrıntılarını ezberlediği pencereden görülen duvarı izleyerek tüm beyin fonksiyonlarını yitirmeye başlar. Zaman zaman sorguya götürülmektedir ve hiçbir iş görmediğinden gittikçe zayıflayan beyni ve düşünce gücü ile sorgu sırasında ağzından bir şey kaçırmamak için büyük bir çaba harcamaktadır.
+        
+        Bir gün sorgu için beklediği odadaki askıda duran bir asker montunun içinde bir kitap görür ve onu çalar. Çok mutludur, zira geçen onca zamandan sonra ilk defa beynini çalıştıracak bir aktivitesi olmuştur. Hücresine geldiğinde kitabı açar ve onun bir satranç oyunları kitabı olduğunu görür. Başta hayal kırıklığına uğrasa da, sonraları ekmek içinden yaptığı taşları ve satranç tahtası olarak kullandığı kareli yatak örtüsü ile kitaptaki tüm oyunları oynamaya başlar. Zamanla tahta ve taşlara da ihtiyaç duymadan zihninde satranç oynamaya başlar. Fakat bir süre sonra bu bir saplantı halini almaya başlar. Tüm zamanını -uyku dahil- satranç oynayarak geçirmeye ve kendi kendisiyle oynamaya başlar. Lakin bu kez de kendi kendiyle oynarken yenildiğinde kendine kızmaya başlar. Oynarken gereğinden fazla heyecanlanmaktadır. Bir seferinde yine kendine karşı kaybedince sinir krizi geçirir ve eliyle camı kırarak elini keser. Sonra da hastaneye kaldırılır. Doktorun onun soyadını tanıması sebebiyle onu bir şekilde oradan çıkarır. Artık özgürdür, fakat bir daha satranç oynamamaya kararlıdır, ta ki gemideki karşılaşmaya dek.
+        
+        Hikayenin sonunda, Czentovic ile bir el daha oynamayı kabul eder. Ertesi gün ilk elde Czentovic yenileceğini anlayınca pes eder ve Dr.B. bir el daha ister. Fakat yine gereğinden fazla heyecanlanmaya başlamıştır. En sonunda, sinir krizi tekrar nüksetmeye başlayınca kendine gelir ve oyunu bırakır. Masada, Czentovic'i satranç taşları ile baş başa bırakmıştır.
+     
+
+        <br>
+</p>
+    </center>
+
+<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+<script>
+  const options = {
+  bottom: '32px', // default: '32px'
+  right: '32px', // default: '32px'
+  left: 'unset', // default: 'unset'
+  time: '0.5s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: false, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+</script>
